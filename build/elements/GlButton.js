@@ -32,7 +32,11 @@ var GlButton = function (_Component) {
     value: function render() {
       var value = this.props.value;
 
-      return _react2.default.createElement('button', { value: value || 'Confirm' });
+      return _react2.default.createElement(
+        'button',
+        null,
+        value || 'Confirm'
+      );
     }
   }]);
 
