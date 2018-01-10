@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-starter",
+  "name": "gl-components",
   "version": "1.0.0-alpha",
   "description": "GroundLink React Components library",
   "main": "build/index.js",
