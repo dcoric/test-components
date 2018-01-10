@@ -12,7 +12,7 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _iconDoubleArrow = require('../../images/icon-double-arrow.svg');
+var _iconDoubleArrow = require('./assets/icon-double-arrow.svg');
 
 var _iconDoubleArrow2 = _interopRequireDefault(_iconDoubleArrow);
 
