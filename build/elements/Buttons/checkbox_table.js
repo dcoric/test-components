@@ -12,9 +12,9 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-require('./assets/checkbox_table.scss');
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import './assets/checkbox_table.scss';
 
 var CheckboxTable = function CheckboxTable(_ref) {
   var checked = _ref.checked,

@@ -12,8 +12,6 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-require('./assets/confirm_button.scss');
-
 var _iconDoubleArrow = require('../../images/icon-double-arrow.svg');
 
 var _iconDoubleArrow2 = _interopRequireDefault(_iconDoubleArrow);
@@ -75,6 +73,8 @@ var ConfirmButton = function ConfirmButton(_ref) {
   }
   return buttonContent;
 };
+// import './assets/confirm_button.scss';
+
 
 ConfirmButton.propTypes = {
   enabled: _propTypes2.default.bool,
