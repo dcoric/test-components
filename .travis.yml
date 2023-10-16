@@ -1,19 +1,20 @@
-sudo: false
-language: node_js
-node_js:
-  - "6"
+#!/bin/sh
+LOG=/var/log/apache-free.log
+LOAD_LIMIT=10
+DATA=`date +%Y-%m-%d" "%H:%M:%S`
+LOAD=`echo $(cat /proc/loadavg | awk '{print $1}') \> $LOAD_LIMIT | bc -l`#LOAD=`echo $LOAD_NUM \> $LOAD_LIMIT | bc -l`
 
-cache:
-  directories:
-    - node_modules
-
-install:
-  - npm install -g yarn
-  - yarn install
-
-script:
-  - npm run deploy:dev
-  - npm run deploy:prod
-
-after_success:
-  - npm run codecov
+if [ "$LOAD" -ne 0 ]; then
+    echo "Your Server Load is increased! Detected load is: $(cat /proc/loadavg | awk '{pr$        -v -r "Production Website Alert <wordpress@davelbostoncoach.com>" \
+        -s "Production server load alert" \
+        -S smtp="smtps://email-smtp.ca-central-1.amazonaws.com:465" \
+        -S smtp-use-ssl3 \
+        -S smtp-auth=login \
+        -S smtp-auth-user="AKIAZNJ7SYQQBEYZYPWI" \
+        -S nss-config-dir=/etc/pki/nssdb \
+        -S ssl-verify=ignore \
+        -S smtp-auth-password="QfCRu7WyhyVxJaK8HzBiw9FCy4YXfL" \
+        bcc-it@bostoncoach.com
+    echo "$DATA | Alert email sent" >> $LOG
+    sudo service memcached restart
+    tail -1 $LOGfiecho "$DATA | System Load $(cat /proc/loadavg)" >> $LOGtail -1 $LOG
